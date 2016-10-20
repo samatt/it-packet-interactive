@@ -1,0 +1,223 @@
+
+  {
+    "_index": "packets-2016-10-20",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "15",
+          "frame.time": "Oct 20, 2016 16:43:22.080272000 EDT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1476996202.080272000",
+          "frame.time_delta": "0.000014000",
+          "frame.time_delta_displayed": "0.000014000",
+          "frame.time_relative": "0.000978000",
+          "frame.number": "21",
+          "frame.len": "166",
+          "frame.cap_len": "166",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "null:ip:tcp:http:data-text-lines",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "null": {
+          "null.family": "2" // 02 00 00 00 // 4 octets
+        },
+        "ip": {
+          "ip.version": "4", // 45 // 1 octet
+          "ip.hdr_len": "20",
+          "ip.dsfield": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "162", // 00 a2 // 2 octets
+          "ip.id": "0x0000adba",
+          "ip.flags": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64", // 40 // 1 octet
+          "ip.proto": "6",
+          "ip.checksum": "0x00000000",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1", // 7f 00 00 01 // 4 octets
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1", // 7f 00 00 01 // 4 octets
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "8000", // 1f 40 // 2 octets
+          "tcp.dstport": "49978", //c3 3a // 2 octets
+          "tcp.port": "8000",
+          "tcp.port": "49978",
+          "tcp.stream": "0",
+          "tcp.len": "110",
+          "tcp.seq": "187", // df f4 ea 28 // 4 octets
+          "tcp.nxtseq": "297",
+          "tcp.ack": "337", // 3a e4 8d da // 4 octets
+          "tcp.hdr_len": "32",
+          "tcp.flags": { // 80 18 // 1 octet for each flag that is set
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00194\u00183\u00194\u00183\u00194\u00183\u00194\u00183\u00194\u00183\u00194\u00183\u00194\u00183AP\u00194\u00183\u00194\u00183\u00194\u00183"
+          },
+          "tcp.window_size_value": "12748",
+          "tcp.window_size": "407936",
+          "tcp.window_size_scalefactor": "32",
+          "tcp.checksum": "0x0000fe96",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3948126042, TSecr 3948126042": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3948126042",
+              "tcp.options.timestamp.tsecr": "3948126042"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000094000",
+            "tcp.analysis.bytes_in_flight": "110",
+            "tcp.analysis.push_bytes_sent": "110"
+          },
+          // corresponds to "line based text data" in WireShark, i.e. html tags and content
+          "tcp.segment_data": "20:3c:21:44:4f:43:54:59:50:45:20:68:74:6d:6c:3e:0a:3c:68:74:6d:6c:20:6c:61:6e:67:3d:22:65:6e:22:3e:0a:3c:68:65:61:64:3e:0a:20:20:3c:6d:65:74:61:20:63:68:61:72:73:65:74:3d:22:75:74:66:2d:38:22:3e:0a:3c:2f:68:65:61:64:3e:0a:3c:62:6f:64:79:3e:0a:3c:68:31:3e:68:65:79:3c:2f:68:31:3e:0a:3c:2f:62:6f:64:79:3e:0a:3c:2f:68:74:6d:6c:3e:0a"
+        },
+        "tcp.segments": {
+          "tcp.segment": "7",
+          "tcp.segment": "9",
+          "tcp.segment": "11",
+          "tcp.segment": "13",
+          "tcp.segment": "15",
+          "tcp.segment": "17",
+          "tcp.segment": "19",
+          "tcp.segment": "21",
+          "tcp.segment.count": "8",
+          "tcp.reassembled.length": "296",
+          //HTTP- this section is cool because you can translate all hex values directly to human readable letters/strings
+          "tcp.reassembled.data": "48:54:54:50:2f:31:2e:30:
+                                   20:32:30:30:20:4f:4b:0d:
+                                   0a:53:65:72:76:65:72:3a:
+                                   20:53:69:6d:70:6c:65:48:
+                                   54:54:50:2f:30:2e:36:20:
+                                   50:79:74:68:6f:6e:2f:32:
+                                   2e:37:2e:31:30:0d:0a:44:
+                                   61:74:65:3a:20:54:68:75:
+                                   2c:20:32:30:20:4f:63:74:
+                                   20:32:30:31:36:20:32:30:
+                                   3a:34:33:3a:32:32:20:47:
+                                   4d:54:0d:0a:43:6f:6e:74:
+                                   65:6e:74:2d:74:79:70:65:
+                                   3a:20:74:65:78:74:2f:68:
+                                   74:6d:6c:0d:0a:43:6f:6e:
+                                   74:65:6e:74:2d:4c:65:6e:
+                                   67:74:68:3a:20:31:31:30:
+                                   0d:0a:4c:61:73:74:2d:4d:
+                                   6f:64:69:66:69:65:64:3a:
+                                   20:54:68:75:2c:20:31:33:
+                                   20:4f:63:74:20:32:30:31:
+                                   36:20:31:37:3a:35:38:3a:
+                                   32:30:20:47:4d:54:0d:0a:
+                                   0d:0a:
+
+                                   // HTTP tags below, i've created new lines at "0a" for legibility
+                                   20:3c:21:44:4f:43:54:59:
+                                   50:45:20:68:74:6d:6c:3e:
+                                   0a:
+                                   3c:68:74:6d:6c:20:6c:61:
+                                   6e:67:3d:22:65:6e:22:3e:
+                                   0a:
+                                   3c:68:65:61:64:3e:0a:20:
+                                   20:3c:6d:65:74:61:20:63:
+                                   68:61:72:73:65:74:3d:22:
+                                   75:74:66:2d:38:22:3e:0a:
+                                   3c:2f:68:65:61:64:3e:0a:
+                                   3c:62:6f:64:79:3e:0a:3c:
+                                   68:31:3e:68:65:79:3c:2f:
+                                   68:31:3e:0a:
+                                   3c:2f:62:6f:64:79:3e:0a:
+                                   3c:2f:68:74:6d:6c:3e:0a"
+        },
+        "http": {
+          "HTTP\/1.0 200 OK\\r\\n": { // 48:54:54:50:2f:31:2e:30 20:32:30:30:20:4f:4b:0d // 16 octets
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "HTTP\/1.0 200 OK\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.version": "HTTP\/1.0",
+            "http.response.code": "200",
+            "http.response.phrase": "OK"
+          },
+          "http.server": "SimpleHTTP\/0.6 Python\/2.7.10", // 53:65:72:76:65:72:3a:20:53:69:6d:70:6c:65:48:54:54:50:2f:30:2e:36:20:50:79:74:68:6f:6e:2f:32:2e:37:2e:31:30:0d:0a
+          "http.response.line": "Server: SimpleHTTP\/0.6 Python\/2.7.10\r\n",
+          "http.date": "Thu, 20 Oct 2016 20:43:22 GMT", // 44:61:74:65:3a:20:54:68:75:2c:20:32:30:20:4f:63:74:20:32:30:31:36:20:32:30:3a:34:33:3a:32:32:20:47:4d:54:0d:0a
+          "http.response.line": "Date: Thu, 20 Oct 2016 20:43:22 GMT\r\n",
+          "http.content_type": "text\/html", // 43:6f:6e:74:65:6e:74:2d:74:79:70:65:3a:20:74:65:78:74:2f:68:74:6d:6c:0d:0a
+          "http.response.line": "Content-type: text\/html\r\n",
+          "http.content_length_header": {
+            "http.content_length": "110"
+          },
+          "http.response.line": "Content-Length: 110\r\n", // 43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:31:31:30:0d:0a
+          "http.last_modified": "Thu, 13 Oct 2016 17:58:20 GMT",
+          "http.response.line": "Last-Modified: Thu, 13 Oct 2016 17:58:20 GMT\r\n", // 4c:61:73:74:2d:4d:
+                                                                                    // 6f:64:69:66:69:65:64:3a:
+                                                                                    // 20:54:68:75:2c:20:31:33:
+                                                                                    // 20:4f:63:74:20:32:30:31:
+                                                                                    // 36:20:31:37:3a:35:38:3a:
+                                                                                    // 32:30:20:47:4d:54:0d:0a
+          "\\r\\n": "",
+          "http.response": "1",
+          "http.response_number": "1",
+          "http.time": "0.000732000",
+          "http.request_in": "5",
+          "http.file_data": " <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n<\/head>\n<body>\n<h1>hey<\/h1>\n<\/body>\n<\/html>\n"
+        },
+        "data-text-lines": {
+          " <!DOCTYPE html>\\n": "",
+          "<html lang=\"en\">\\n": "",
+          "<head>\\n": "",
+          "  <meta charset=\"utf-8\">\\n": "",
+          "<\/head>\\n": "",
+          "<body>\\n": "",
+          "<h1>hey<\/h1>\\n": "",
+          "<\/body>\\n": "",
+          "<\/html>\\n": ""
+        }
+      }
+    }
+  }
