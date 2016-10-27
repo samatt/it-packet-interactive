@@ -12,6 +12,7 @@
     "body-parser": "^1.15.2",
     "cors": "^2.8.1",
     "express": "^4.14.0",
-    "pcap": "git+https://github.com/mranney/node_pcap.git"
+    "pcap": "git+https://github.com/mranney/node_pcap.git",
+    "socket.io": "^1.5.1"
   }
 }
